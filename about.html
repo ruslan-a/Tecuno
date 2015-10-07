@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About - The Vestige Times</title>
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/type.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/main.css">
+	<?php include('live/analytics.php'); ?>
+</head>
+
+<body>
+	<div class="container_12" style="border-right: solid 1px #666">
+		<?php include("header.php"); ?>
+		<div class="grid_8 postsContainer">
+			<div class="grid_7 post">
+				<h2 class="postTitle">Who are we?</h2>
+				<img class="previewImage" src="articles/<?=$article['url']; ?>/banner.jpeg" width="100%"> </img>
+				<p></p>
+			</div>
+		</div>
+		<?php include("sidebar.php"); ?>
+	</div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/**************** TYPOGRAPHY THINGS ****************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Fjord+One);
+
+@font-face {
+	font-family: 'American Typewriter';   
+	src: url('/res/amrtypen-webfont.eot');
+	src: url('/res/amrtypen-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/res/amrtypen-webfont.woff') format('woff'),
+		url('/res/amrtypen-webfont.ttf') format('truetype'),         
+		url('/res/amrtypen-webfont.svg#amertype_md_btmedium') format('svg');
+}
+
+@font-face {    
+	font-family: Monaco;    
+	src: url('/res/monaco-webfont.eot');
+	src: url('/res/monaco-webfont.eot?#iefix') format('embedded-opentype'),         
+		url('/res/monaco-webfont.woff') format('woff'),
+		url('/res/monaco-webfont.ttf') format('truetype'),     
+		url('/res/monaco-webfont.svg#monacoregular') format('svg');
+}
+
+@font-face {
+	font-family: 'MuseoSans-500';
+	src: url('/res/246076_0_0.eot');
+	src: url('/res/246076_0_0.eot?#iefix') format('embedded-opentype'),
+		url('/res/246076_0_0.woff') format('woff'),
+		url('/res/246076_0_0.ttf') format('truetype');
+}
+
+h2 {
+	font-family: "American Typewriter", "Courier New", Courier, serif;
+	font-weight: 400;
+}
+
+a {
+	color: #33adad;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/**************** LAYOUT THINGS ****************/
+
+body {
+	background: url('/img/bg.png') #eee;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 400;
+	/*display: none;*/
+}
+
+.header {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 100px;
+}
+
+	.logo {
+		position: relative;
+		top: -45px;
+		left: -50px;
+	}
+
+	.title a{
+		padding-left: 0px;
+/*		line-height: 100px;*/
+		font-family: "American Typewriter", "Courier New", Courier, serif;
+		font-weight: 400;
+		color: #333;
+		/*background: rgba(255,255,255,0.6);*/
+		text-shadow: 0px 0px 5px #fff;
+		position: relative;
+		top: -6px;
+		left: -25px;
+	}
+
+	.title:hover {
+		text-decoration: none;
+	}
+
+	.logo {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		 -webkit-box-sizing: border-box;
+		padding-left: 10px;
+		padding-top: 18px;
+	}
+
+.toolbar {
+	height: 32px;
+	background: #333;
+	line-height: 32px;
+	font-family: Monaco, Helvetica, Arial, sans;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+	.toolbarItem {
+		margin-left: 15px;
+		color: #fff;
+	}
+	
+	.toolbarItem:hover {
+		color: #33adad;
+		text-decoration: none;
+	}
+
+.adContainer {
+	height: 90px;
+	background: #333;
+	text-align: center;
+}
+
+.pageTitle {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.stream {
+	padding: 0px 10px 0px 10px;
+}
+
+.streamStatus {
+	color: #ee3333;
+}
+
+.postsContainer {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 -webkit-box-sizing: border-box;
+	border: solid 1px #ccc;
+	border-top: none;
+	background: #fff;
+	margin-bottom: 25px;
+}
+
+	.post {
+		font-family: "MuseoSans-500";
+		font-size: 0.9em;
+		padding: 30px 30px 10px 30px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+		.postTitle {
+			margin: 0;
+			font-size: 1.5em;
+			font-weight: 400;
+			color: #000;
+		}
+
+		.postTitle a {
+			color: #000;
+		}
+
+		.authorDate {
+			color: #666;
+			font-size: 0.8em;
+			font-family: 'Open Sans', Verdana, sans-serif;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.authorDate a {
+			color: #666;
+		}
+
+		.postImage {
+			width: 530px;
+			display: block;
+			margin: 15px auto 15px auto;
+		}
+
+		.post p {
+			margin: 5px 0px 15px 0px;
+		}
+
+		.footnote {
+			font-size: 0.9em;
+			font-style: italic;
+			color: #666;
+		}
+
+		.postFooter {
+			border-bottom: 1px solid #ccc;
+		}
+
+			.commentCount {
+				position: relative;
+				font-family: 'Open Sans',Tahoma, Verdana, sans-serif;
+				font-size: 0.8em;
+				letter-spacing: 0.1em;
+				color: #666;
+			}
+
+			.commentCount:hover {
+				color: #666;
+				text-decoration: none;
+			}
+
+		.disqusThread {
+			margin-top: 15px;
+		}
+		
+		.feedFooter {
+			text-align: center;
+			margin-bottom: 25px;
+		}
+
+.sidebar {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+	padding: 25px 25px 0px 25px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-top: none;
+	background: #fff;
+}
+
+	.sidebarSection {
+		width: 250px;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+
+	.sidebarSection h2 {
+		margin: 0;
+	}
+
+	.sidebarAd {
+		height: 250px;
+	}
+
+	.twitterSection {
+		width: inherit;
+	}
+
+	.sidebarBottom {
+		margin-top: 5px;
+		font-size: 0.8em;
+		text-align: center;
+		color: #555;
+	}
