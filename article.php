@@ -1,15 +1,8 @@
-<?php
-$con = mysql_connect("localhost","root","evenstar");
-if (!$con) {
-	die('Could not connect to SQL: ' . mysql_error());
-}
-mysql_select_db("techunion", $con);
+<?php include 'db.php'; 
+$result = pdo_query("SELECT * FROM articles WHERE id = ".$_GET['id']);
+$article = pdo_fetch_array($result);
 
-$result = mysql_query("SELECT * FROM articles WHERE id = ".$_GET['id']);
-$article = mysql_fetch_array($result);
-
-mysql_close($con);
-?>
+pdo_close($con);?>
 
 <!DOCTYPE html>
 <html>
