@@ -43,7 +43,7 @@
 			fclose($handle);
 			echo "<br><br>Done";
 		} else {
-			echo "<meta http-equiv='REFRESH' content='0;url=/newarticle.html?invalid=1'>";
+			echo "<meta http-equiv='REFRESH' content='0;url=/cms/?a=newArticle&invalid=1'>";
 		}
 	}	else {
 			echo "Article URL: ".$url;

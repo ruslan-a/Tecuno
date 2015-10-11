@@ -18,16 +18,6 @@
 	
 <div class="container_12">
 		<?php include("header.php"); ?>
-		<div class="grid_12 adContainer">
-			<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-9711785518404937"; 
-				/* topBanner */ 
-				google_ad_slot = "2632758791"; 
-				google_ad_width = 728; 
-				google_ad_height = 90; 
-			</script>
-			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
-		</div>
 		<?php include("feed.php"); ?>
 		<?php include("sidebar.php"); ?>
 	</div>

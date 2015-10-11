@@ -4,6 +4,25 @@ body {
 	color: #444;
 }
 
+a {
+	color: #7ca
+}
+
+h2 {
+	font-size: 1em;
+}
+
+.outerWrapper {
+	max-width: 500px;
+	margin: auto;
+}
+
+.backLink {
+	position: relative;
+	top: 10px;
+	color: #999;
+}
+
 .wrapper {
 	width: 500px;
 	margin: auto;
@@ -11,7 +30,7 @@ body {
 	padding: 25px;
 	background: white;
 	border-radius: 10px;
-	box-shadow: inset 0px 2px 5px rgba(0,0,0,0.4);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .form {
@@ -21,12 +40,17 @@ body {
 	margin-top: 30px;
 }
 
+	input {
+		margin: 5px;
+		padding: 5px;
+	}
+
 .heading {
 	font-size: 1.2em;
 	color: #666;
 	text-align: center;
 	margin-bottom: 25px;
-	text-shadow: 0px 1px 0px rgba(255,255,255,1);
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
 }
 
 .smallFields {
@@ -37,7 +61,30 @@ body {
 .bodyArea {
 	float: right;
 	border: 1px solid #aaa;
-	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.post {
+	margin: 20px 0 20px 0;
+}
+
+.postFooter {
+	background: #eee;
+	border-radius: 4px;
+	padding: 5px;
+	clear: both;
+	color: #666;
+}
+
+.postFooter .button {
+	background: #aaa;
+	border-radius: 5px;
+	padding: 5px;
+	margin: -5px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	float: right;
 }
 
 .postButtonDiv {

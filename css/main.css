@@ -1,3 +1,4 @@
+
 /**************** TYPOGRAPHY THINGS ****************/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
@@ -27,6 +28,10 @@
 	src: url('/res/246076_0_0.eot?#iefix') format('embedded-opentype'),
 		url('/res/246076_0_0.woff') format('woff'),
 		url('/res/246076_0_0.ttf') format('truetype');
+}
+
+h1 {
+	margin: 20px 0 20px 0;
 }
 
 h2 {
@@ -66,17 +71,11 @@ body {
 		left: -50px;
 	}
 
-	.title a{
+	.title a {
 		padding-left: 0px;
-/*		line-height: 100px;*/
 		font-family: "American Typewriter", "Courier New", Courier, serif;
 		font-weight: 400;
 		color: #333;
-		/*background: rgba(255,255,255,0.6);*/
-		text-shadow: 0px 0px 5px #fff;
-		position: relative;
-		top: -6px;
-		left: -25px;
 	}
 
 	.title:hover {
@@ -148,7 +147,8 @@ body {
 		-moz-box-sizing: border-box;
 	}
 
-		.postTitle {
+		.postTitle, h3 {
+			font-family: "American Typewriter";
 			margin: 0;
 			font-size: 1.5em;
 			font-weight: 400;
@@ -217,7 +217,7 @@ body {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
  -webkit-box-sizing: border-box;
-	padding: 25px 25px 0px 25px;
+	padding: 25px 25px 25px 25px;
 	border: 1px solid #ccc;
 	border-left: none;
 	border-top: none;
@@ -230,8 +230,8 @@ body {
 		margin-bottom: 25px;
 	}
 
-	.sidebarSection h2 {
-		margin: 0;
+	.sidebarSection h3 {
+		text-align: center;
 	}
 
 	.sidebarAd {
