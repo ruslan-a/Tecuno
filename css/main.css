@@ -52,7 +52,7 @@ a:hover {
 /**************** LAYOUT THINGS ****************/
 
 body {
-	background: url('/img/bg.png') #eee;
+	background: url('..img/bg.png') #eee;
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 400;
 	/*display: none;*/
