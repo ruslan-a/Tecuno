@@ -17,7 +17,7 @@
 	echo 
 	'<head>
 		<title>Posted</title>
-		<link rel="stylesheet" href="/css/cms.css">
+		<link rel="stylesheet" href="./cms.css">
 	</head>
 	<body>
 	<div class="wrapper">

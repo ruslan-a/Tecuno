@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>The Vestige Times</title>
+	<title>Example Site</title>
 	<meta name="description" content="Tech, media and culture news all in one place." />
 	<meta name="keywords" content="tech,technology,computers,news,latest,iphone,ipad,icloud,icloudnews,ios6,windows,mac,review,movies,tvshows" />
 	<meta name="author" content="Inexplicable &amp; Certify" />

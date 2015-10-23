@@ -23,11 +23,9 @@
 		</div>
 	</div>
 </body>
-
-
 <?php }
 if(isset($_GET['a']) && $_GET['a'] == 'newArticle') { 
-if($_POST['password'] != 'test') {  // todo: fix this password placeholder shit
+if($_POST['password'] == 'test') {  // todo: fix this password placeholder shit
 ?>
 <head>
 	<title>New Article</title>
