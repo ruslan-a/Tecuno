@@ -36,10 +36,7 @@ foreach ($result as $row) {
 	$counter += 1;
 }
 
-echo "<div class='grid_8 postsContainer'>";
-if($filter == "videos") {
-	echo "<h2 class='postTitle' style='margin-top: 25px; text-align: center;'>Videos coming soon!</h2>";
-}
+echo "<div class='grid_12 postsContainer'>";
 	
 $reverseCount = 0;
 while($reverseCount < 5) {
@@ -56,8 +53,8 @@ while($reverseCount < 5) {
 		break;
 	}
 	if(($filter == $type) or ($filter == null)) {
-		echo "<div class='grid_8 post'>";
-			echo "<h2 class='postTitle'><a href='article.php?id=$id&amp;name=$url'>$title</a></h2>";
+		echo "<div class='grid_12 post'>";
+			echo "<a class='postTitle' href='article.php?id=$id&amp;name=$url'>$title</a>";
 			echo "<span class='authorDate'> by $author on $created in <a href='/?filter=$type'>$type</a> </span>";
 			echo "<a href='article.php?id=$id&amp;name=$url'><img class='postImage' src='cms/articles/$url/banner.jpeg' alt='$title Image'/></a>";
 			echo $blurb."…";
@@ -76,7 +73,6 @@ if(isset($_GET['page'])) {
 	$prevPage = $_GET['page']-1;
 	echo "<a href='/?page=$prevPage'>Previous Page</a>";
 }
-
 
 if($noArticles == true) {
 	echo "No more articles.<br>";

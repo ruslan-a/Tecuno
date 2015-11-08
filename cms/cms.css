@@ -1,138 +1,107 @@
 body {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a2bf+0,3343aa+100 */
-background: #00a2bf; /* Old browsers */
-background: -moz-linear-gradient(top,  #00a2bf 0%, #3343aa 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a2bf), color-stop(100%,#3343aa)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #00a2bf 0%,#3343aa 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #00a2bf 0%,#3343aa 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #00a2bf 0%,#3343aa 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #00a2bf 0%,#3343aa 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2bf', endColorstr='#3343aa',GradientType=0 ); /* IE6-9 */
-
-	font-family: Helvetica, Arial;
-	color: #444;
-}
+  font-family: Helvetica, Arial;
+  color: #444;
+  background: #81eae7;
+  background: -moz-linear-gradient(top, #81eae7 0%, #1c5f8c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #81eae7), color-stop(100%, #1c5f8c));
+  background: -webkit-linear-gradient(top, #81eae7 0%, #1c5f8c 100%);
+  background: -o-linear-gradient(top, #81eae7 0%, #1c5f8c 100%);
+  background: -ms-linear-gradient(top, #81eae7 0%, #1c5f8c 100%);
+  background: linear-gradient(to bottom, #81eae7 0%, #1c5f8c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81eae7', endColorstr='#1c5f8c',GradientType=0 );
+  background-attachment: fixed; }
 
 a {
-	color: #7ca
-}
+  color: #7ac; }
 
 h2 {
-	font-size: 1em;
-}
+  font-size: 1em; }
 
 .outerWrapper {
-	max-width: 500px;
-	margin: auto;
-}
-
-.backLink {
-	position: relative;
-	top: 10px;
-	color: #fff;
-	text-decoration: none;
-}
-
-.wrapper {
-	width: 500px;
-	margin: auto;
-	margin-top: 200px;
-	padding: 25px;
-	background: rgba(255,255,255,0.6);
-	border-radius: 10px;
-	box-shadow: 0 2px 40px 20px rgba(0,0,0,0.1);
-}
-
-.form {
-	width: 200px;
-	text-align: center;
-	margin: auto;
-	margin-top: 30px;
-}
-
-	input {
-		margin: 5px;
-		padding: 5px;
-	}
+  max-width: 640px;
+  margin: 0 auto 100px auto; }
+  .outerWrapper .wrapper {
+    margin: auto;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 2px 40px 20px rgba(0, 0, 0, 0.1); }
 
 .heading {
-	font-size: 2em;
-	/*font-weight: 100;*/
-	text-transform: uppercase;
-	color: #7ac;
-	text-align: center;
-	margin-bottom: 25px;
-}
+  font-size: 2.4em;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 10px;
+  margin-top: 100px; }
 
-.smallFields {
-	width: 123px;
-	float: left;
-}
+.newPostForm {
+  margin: 0; }
+  .newPostForm input, .newPostForm textarea {
+    display: block; }
+  .newPostForm textarea {
+    width: 100%;
+    border: solid 2px #7ac; }
+  .newPostForm .small {
+    display: inline-block;
+    border: none;
+    width: 120px; }
+  .newPostForm input[name=title] {
+    padding: 5px 5px 5px 0;
+    font-size: 1.4em;
+    border: none; }
 
-.bodyArea {
-	float: right;
-	border: 1px solid #aaa;
-	box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
+input[type=submit] {
+  width: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  color: #7ac;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border: solid 2px #7ac;
+  background: none; }
+
+form#login {
+  width: 200px;
+  text-align: center;
+  margin: 20px auto 20px auto; }
+
+form#login input {
+  width: 100%;
+  font-size: 1em;
+  border: solid 2px #7ac;
+  padding: 5px;
+  box-sizing: border-box; }
 
 .post {
-	margin: 20px 0 20px 0;
-}
+  margin: 20px 20px 60px 20px;
+  display: block; }
+  .post .postTitle {
+    font-size: 1.3em;
+    font-weight: 400; }
+  .post a {
+    text-decoration: none; }
 
 .postFooter {
-	background: #eee;
-	border-radius: 4px;
-	padding: 5px;
-	clear: both;
-	color: #666;
-}
+  background: #7ac;
+  padding: 5px;
+  clear: both;
+  color: white; }
+  .postFooter a {
+    color: white; }
 
-.postFooter .button {
-	background: #aaa;
-	border-radius: 5px;
-	padding: 5px;
-	margin: -5px;
-	text-transform: uppercase;
-	color: #fff;
-	text-decoration: none;
-	float: right;
-}
+.button {
+  float: right;
+  padding: 5px;
+  margin: -5px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #7ac; }
+  .button:hover {
+    color: #ddd; }
 
-.postButtonDiv {
-	margin: auto;
-	padding-top: 25px;
-	clear: both;
-	height: 24px;
-	width: 150px;
-}
-
-.postButton {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6) );
-	background:-moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
-	background-color:#ffffff;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#666666;
-	font-family:Verdana;
-	font-size:15px;
-	font-weight:normal;
-	padding:6px 40px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}.postButton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff) );
-	background:-moz-linear-gradient( center top, #f6f6f6 5%, #ffffff 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
-	background-color:#f6f6f6;
-}.postButton:active {
-	position:relative;
-	top:1px;
-}
-/* This imageless css button was generated by CSSButtonGenerator.com */
+.backLink {
+  position: relative;
+  top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none; }
