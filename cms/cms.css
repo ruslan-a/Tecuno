@@ -21,6 +21,7 @@ h2 {
   max-width: 640px;
   margin: 0 auto 100px auto; }
   .outerWrapper .wrapper {
+    overflow: auto;
     margin: auto;
     padding: 25px;
     background: #fff;
@@ -39,15 +40,21 @@ h2 {
     display: block; }
   .newPostForm textarea {
     width: 100%;
-    border: solid 2px #7ac; }
+    border: none;
+    font-size: 1em; }
   .newPostForm .small {
     display: inline-block;
     border: none;
     width: 120px; }
   .newPostForm input[name=title] {
     padding: 5px 5px 5px 0;
-    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+    font-weight: 400;
     border: none; }
+  .newPostForm input[type=submit] {
+    float: right;
+    margin: 20px auto 0 auto; }
 
 input[type=submit] {
   width: 200px;
