@@ -55,7 +55,7 @@ while($reverseCount < 5) {
 	if(($filter == $type) or ($filter == null)) {
 		echo "<div class='grid_12 post'>";
 			echo "<a class='postTitle' href='article.php?id=$id&amp;name=$url'>$title</a>";
-			echo "<span class='authorDate'> by $author on $created in <a href='/?filter=$type'>$type</a> </span>";
+			echo "<span class='byline'> by $author on $created in <a href='/?filter=$type'>$type</a> </span>";
 			echo "<a href='article.php?id=$id&amp;name=$url'><img class='postImage' src='cms/articles/$url/banner.jpeg' alt='$title Image'/></a>";
 			echo $blurb."…";
 			echo " <a class='readMore' href='article.php?id=$id&amp;name=$url'>read more.</a></p>";

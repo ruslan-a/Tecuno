@@ -55,7 +55,7 @@ body {
 }
 
 	.title {
-		font-family: Forum;
+		font-family: Forum, Georgia, 'Times New Roman', serif;
 		color: rgba(0,0,0,0.6);
 	}
 
@@ -81,11 +81,6 @@ body {
 		text-decoration: none;
 	}
 
-.pageTitle {
-	text-align: center;
-	font-size: 1.5em;
-}
-
 .postsContainer {
 	background: #fff;
 }
@@ -104,11 +99,7 @@ body {
 			font-size: 1.7em;
 		}
 
-		.postTitle a: hover {
-
-		}
-
-		.authorDate {
+		.byline {
 			color: #aaa;
 		}
 
@@ -138,7 +129,10 @@ body {
 		}
 
 .button {
+	display: inline-block;
 	border: solid 2px;
 	padding: 5px;
+	margin: 10px 0 0 0;
+	clear: both;
 	text-transform: uppercase;
 }
