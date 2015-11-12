@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'cms/db.php';
 
 $filter = NULL;
 $page = NULL;
@@ -36,6 +36,8 @@ foreach ($result as $row) {
 	$counter += 1;
 }
 
+$noArticles = false;
+
 echo "<div class='grid_12 postsContainer'>";
 	
 $reverseCount = 0;
@@ -48,19 +50,23 @@ while($reverseCount < 5) {
 	$category = $articles[$reverseCount]['category'];
 	$type = $articles[$reverseCount]['type'];
 	$blurb = substr(file_get_contents('cms/articles/'.$url.'/text.html',TRUE),0,450);
+
 	if($url == null) {
 		$noArticles = true;
 		break;
 	}
+
 	if(($filter == $type) or ($filter == null)) {
-		echo "<div class='grid_12 post'>";
-			echo "<a class='postTitle' href='article.php?id=$id&amp;name=$url'>$title</a>";
-			echo "<span class='byline'> by $author on $created in <a href='/?filter=$type'>$type</a> </span>";
-			echo "<a href='article.php?id=$id&amp;name=$url'><img class='postImage' src='cms/articles/$url/banner.jpeg' alt='$title Image'/></a>";
-			echo $blurb."…";
-			echo " <a class='readMore' href='article.php?id=$id&amp;name=$url'>read more.</a></p>";
-			echo "<div class='postFooter'><a class='commentCount' href='article.php?id=$id&amp;name=$url#disqus_thread'>Link</a></div>";
-		echo "</div>";
+		$noArticles = false;
+		echo "
+			<div class='grid_12 post'>
+				<a class='postTitle' href='article.php?id=$id&amp;name=$url'>$title</a>
+				<span class='byline'> by $author on $created in <a href='/?filter=$type'>$type</a></span>
+				<a href='article.php?id=$id&amp;name=$url'>
+					<img class='postImage' src='cms/articles/$url/banner.jpeg' alt='$title Image'/>
+				</a>
+				$blurb … <a class='readMore' href='article.php?id=$id&amp;name=$url'>read more.</a></p>
+			<hr></div>";
 	}
 	$reverseCount ++;
 }
@@ -80,8 +86,6 @@ if($noArticles == true) {
 }	elseif($noArticles == false) {
 	echo "<a href='/?page=$nextPage'>Next Page</a>";
 }
-echo "</div>"; //end feedFooter
 
-
-echo "</div>"; //end PostsContainer
+echo "</div></div>";
 ?>

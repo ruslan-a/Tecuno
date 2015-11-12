@@ -1,5 +1,5 @@
 <?php 
-include 'db.php'; 
+include 'cms/db.php'; 
 
 $query = ('SELECT * FROM articles WHERE id = :id');
 $statement = $con -> prepare($query);
@@ -20,17 +20,16 @@ $post = $statement -> fetch(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="article">
 	<div class="container_12">
 		<?php include("header.php"); ?>
 		<div class="grid_12 postsContainer">
 			<div class="grid_12 post">
+				<h2 class="postTitle"><?=$post['title'];?></h2>
+				<span class="byline"> by <?=$post['author'];?> on <?=$post['created']; ?> </span>
+				<img class="postImage" src="cms/articles/<?=$post['url']; ?>/banner.jpeg" width="100%"> </img>
 				<div class="postInner">
-					<h2 class="postTitle"><?=$post['title'];?></h2>
-					<span class="byline"> by <?=$post['author'];?> on <?=$post['created']; ?> </span>
-					<img class="postImage" src="cms/articles/<?=$post['url']; ?>/banner.jpeg" width="100%"> </img>
 					<?php include("cms/articles/".$post['url']."/text.html"); ?>
-					<br>
           <a class="button" href="/">back to news</a>
 				</div>
 		</div>
