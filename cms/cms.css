@@ -69,6 +69,7 @@ form#login input {
   font-size: 1em;
   border: solid 2px #7ac;
   padding: 5px;
+  margin: 10px 0;
   box-sizing: border-box; }
 
 .post {
